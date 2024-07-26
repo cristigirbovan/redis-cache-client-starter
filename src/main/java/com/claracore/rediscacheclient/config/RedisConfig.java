@@ -44,29 +44,6 @@ public class RedisConfig {
     @Value("${spring.redis.timeout}")
     private Duration timeout;
 
-    /*
-    @Bean
-    public LettuceConnectionFactory redisConnectionFactory() {
-        List<String> clusterNodes = List.of("127.0.0.1:7000", "127.0.0.1:7001", "127.0.0.1:7002");
-        RedisClusterConfiguration clusterConfig = new RedisClusterConfiguration(clusterNodes);
-        clusterConfig.setMaxRedirects(3);
-        return new LettuceConnectionFactory(clusterConfig);
-    }
-
-    @Bean
-    public RedisTemplate<String, Object> redisTemplate() {
-        final RedisTemplate<String, Object> template = new RedisTemplate<>();
-        template.setConnectionFactory(redisConnectionFactory());
-        template.setValueSerializer(new GenericToStringSerializer<>(Object.class));
-        return template;
-    }
-
-    @Bean
-    public CacheManager redisCacheManager(RedisConnectionFactory redisConnectionFactory) {
-        return RedisCacheManager.builder(redisConnectionFactory).build();
-    }
-    */
-
     /**
      * Creates a LettuceConnectionFactory for connecting to a Redis cluster with connection pooling.
      *
