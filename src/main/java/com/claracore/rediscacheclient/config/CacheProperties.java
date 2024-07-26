@@ -22,13 +22,11 @@ import java.util.Map;
  * </p>
  *
  * <p>
- * Example configuration in application.properties or application.yml:
+ * Example configuration in application.properties:
  * <pre>
- * cache:
- *   myCache:
- *     ttl: 3600
- *     timeUnit: s
- *     cacheType: REDIS
+ * cache.getPostRT.ttl=90
+ * cache.getPostRT.timeUnit=s
+ * cache.getPostRT.cacheType=REDIS
  * </pre>
  * </p>
  *
