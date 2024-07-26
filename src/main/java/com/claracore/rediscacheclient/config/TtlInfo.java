@@ -23,8 +23,6 @@ import java.util.concurrent.TimeUnit;
  * - Ensure that the TTL values and cache type are properly configured for optimal caching.
  * </p>
  *
- * @see TimeUnit
- *
  * @author CGI
  */
 @Data
