@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.claracore.rediscacheclient.config.CacheConfig,\
+com.claracore.rediscacheclient.config.CacheProperties,\
+com.claracore.rediscacheclient.config.RedisConfig
